@@ -23,13 +23,16 @@ body {
 }
 
 .nav div.logo {
-    float: left;
+    text-align: center;
+    /* float: left; */
     width: auto;
     height: auto;
     padding-left: 3rem;
 }
 
 .nav div.logo a {
+    text-align: center;
+    width: 100%;
     text-decoration: none;
     color: #fff;
     font-size: 8rem;
