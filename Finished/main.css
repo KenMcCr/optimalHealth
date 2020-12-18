@@ -31,6 +31,7 @@ body {
 
 .nav div.logo a {
     text-align: center;
+    text-transform: uppercase;
     width: 100%;
     text-decoration: none;
     color: #fff;
@@ -41,5 +42,33 @@ body {
     color: blue;
 }
 
+h1{
+    padding: 5em;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow:grey 3px 1px;
+}
 
+.physicalA{
+    flex-direction: column;
+    font-size: 5em;
+    color: blue;
+}
 
+.mentalA{
+    flex-direction: column;
+    font-size: 5em;
+    color: blue;
+}
+
+.emotionalA{
+    flex-direction: column;
+    font-size: 5em;
+    color: blue;
+}
+
+.betterA{
+    flex-direction: column;
+    font-size: 5em;
+    color: blue;
+}
