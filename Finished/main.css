@@ -7,7 +7,7 @@ body {
     font-family: "Quicksand", sans-serif;
     font-size: 62.5%;
     font-size: 10px;
-    background-color: black;
+    background-color: lightgray;
 }
 /*-- Inspiration taken from abdo steif -->
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
@@ -24,7 +24,6 @@ body {
 
 .nav div.logo {
     text-align: center;
-    /* float: left; */
     width: auto;
     height: auto;
     padding-left: 3rem;
@@ -39,37 +38,8 @@ body {
 }
 
 .nav div.logo a:hover {
-    color: #00E676;
+    color: blue;
 }
 
-.nav div.main_list {
-    height: 65px;
-    float: right;
-}
 
-.nav div.main_list ul {
-    width: 100%;
-    height: 65px;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
-.nav div.main_list ul li {
-    width: auto;
-    height: 65px;
-    padding: 0;
-    padding-right: 3rem;
-}
-
-.nav div.main_list ul li a {
-    text-decoration: none;
-    color: #fff;
-    line-height: 65px;
-    font-size: 4rem;
-}
-
-.nav div.main_list ul li a:hover {
-    color: #00E676;
-}
