@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <section class="hero">
+    <section class="hero" id="hero_ID">
         <div class="container">
             <h1>SYNCHRONICITY</h1>
         
@@ -23,10 +23,11 @@
 
         <p class="how_R_U">How are you feeling today</p>
         <section class="feelings">
-            <div>Elated</div>
-            <div>Tranquil</div>
-            <div>Gloomy</div>
+            <div class="elated">Elated</div>
+            <div class="tranquil">Tranquil</div>
+            <div class="gloomy">Gloomy</div>
         </section>
+
         <section class="bttn_align">
             <button class="recom_bttn">Suggest Songs!</button>
         </section>
@@ -34,11 +35,28 @@
     </section>  
     
 
-    <section class="recommendations_hidden">
-        <form></form>
+    <section class="recommendations_hidden" id="suggest">
+        <div class="x-button_align">
+            <img src="Picture/Unknown.png" alt="x-button" class="x-button"/>
+        </div>
+        <div class="div_form">
+            <form action="#" method="POST">
+
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="number" placeholder="Your phone number" required>
+    
+                <label for="recommendation">Recommendation:</label>
+                <textarea id="recomendation" name="recommendation" rows="7" cols="50" placeholder="Please leave your comment here..." required></textarea>
+    
+                <input type="submit" class="submit">
+            </form>
+        </div>
     </section>
 
-
+<script src="./app.js"></script>
 </body>
 
 </html>

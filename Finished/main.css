@@ -43,6 +43,16 @@ body {
     filter: saturate(.7);
     height: 100vh;
     background-size: cover;
+    transition-duration: .6s;
+}
+
+.hero_suggest_active {
+    background-image: url("./Picture/aaa.jpg");
+    filter: saturate(.7);
+    height: 100vh;
+    background-size: cover;
+    filter: blur(5px);
+    transition-duration: .6s;
 }
 
 .how_R_U {
@@ -73,7 +83,18 @@ body {
 .feelings div:hover {
     background-color: rgba(0,0,0, 1);
     transition-duration: .3s;
-    color: rgba(141, 3, 63, 1);
+}
+
+.gloomy:hover {
+    color: #8d033f;
+}
+
+.tranquil:hover {
+    color: #4b52dd;
+}
+
+.elated:hover {
+    color: #66c4a0;
 }
 
 .bttn_align {
@@ -89,6 +110,7 @@ body {
     border: none;
     color: white;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .recom_bttn:active {
@@ -100,25 +122,67 @@ body {
 .recommendations_hidden {
     position: absolute;
     top: 10%;
-    right: 10%;
-    right: 100%;
-    width: 80%;
+    right: 21%;
+    width: 60%;
     height: 80vh;
     background-color: rgba(63, 63, 63, 0.8);
     z-index: 2;
     border-radius: 30px;
-    /* display: hidden; */
+    display: none;
 }
 
 .recommendations {
     position: absolute;
     top: 10%;
-    right: 10%;
-    right: 100%;
-    width: 80%;
+    right: 21%;
+    width: 60%;
     height: 80vh;
     background-color: rgba(63, 63, 63, 0.8);
     z-index: 2;
     border-radius: 30px;
-    display: hidden;
+}
+
+.x-button_align{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.x-button {
+    width: 20px;
+    margin: 15px 15px 0 0;
+    cursor: pointer;
+}
+
+form label {
+    font-size: 3em;
+    display: block;
+    width: 100%;
+    color: white;
+}
+
+form input[type=text], input[type=tel]{
+    display: block;
+    width: 70%;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.submit {
+    display: block;
+    color: white;
+    padding: 14px 40px;
+    margin: 30px auto auto auto;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.5em;
+    background-color: black;
+}
+
+.div_form {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
 }

@@ -1,0 +1,15 @@
+{
+  "name": "finished",
+  "version": "1.0.0",
+  "description": "Music Therapy App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marvin Thapa Renteral, Robert Young, Kenneth Mccray, Rudy Rodriguez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "joi": "^17.3.0"
+  }
+}
