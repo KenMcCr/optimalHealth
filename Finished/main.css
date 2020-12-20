@@ -21,11 +21,14 @@ body {
 }
 
 .container .description{
-    opacity: 1;
+    opacity: 0;
     color: white;
     width: 100%;
     text-align: center;
-    transition-property: opacity, transform;
+}
+
+.container h1:hover .description {
+    opacity: 1;
 }
 
 .img {
@@ -51,8 +54,10 @@ body {
 
 .feelings {
     margin-top: 60px;
+    margin-left: 30px;
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     justify-content: space-around;
     font-size: 4em;
 }
@@ -62,6 +67,7 @@ body {
     padding: 20px;
     border-radius: 20px;
     box-shadow: lightgray ;
+    cursor: pointer;
 }
 
 .feelings div:hover {
@@ -70,3 +76,49 @@ body {
     color: rgba(141, 3, 63, 1);
 }
 
+.bttn_align {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.recom_bttn {
+    width: auto;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.recom_bttn:active {
+    outline: none;
+    border: none;
+  }
+
+
+.recommendations_hidden {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    right: 100%;
+    width: 80%;
+    height: 80vh;
+    background-color: rgba(63, 63, 63, 0.8);
+    z-index: 2;
+    border-radius: 30px;
+    /* display: hidden; */
+}
+
+.recommendations {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    right: 100%;
+    width: 80%;
+    height: 80vh;
+    background-color: rgba(63, 63, 63, 0.8);
+    z-index: 2;
+    border-radius: 30px;
+    display: hidden;
+}
