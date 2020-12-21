@@ -35,7 +35,7 @@ const playlist_generator = async (event) => {
             playlist_ID = "6wObnEPQ63a4kei1sEcMdH"
             break
         case "elated":
-            playlist_ID = "37i9dQZF1DWW5pQp5JqjY4"
+            playlist_ID = "37i9dQZF1DX36Xw4IJIVKA"
             break
         case "gloomy":
             playlist_ID = "4C5u13rggsEdRN7An3A6uT"
