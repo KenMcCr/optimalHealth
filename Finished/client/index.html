@@ -17,9 +17,6 @@
                 PROVIDING HIGH FREQUENCIES FOR HEALTH AND HEALING FOR THE BEST RESULTS WEAR HEADPHONES
             </h2>
         </div>
-        <div class="img">
-            <img src="https://cdn.elegantthemes.com/images/divi-play-button.png" alt="Play-Button"/>
-        </div>  
 
         <p class="how_R_U">How are you feeling today</p>
         <section class="feelings">
@@ -32,6 +29,28 @@
             <button class="recom_bttn">Suggest Songs!</button>
         </section>
 
+        <section class="songs_sec">
+            <section class="elated_songs" id="elated">
+                <p>Ended with the Night</p>
+                <p>Pray</p>
+                <p>Larmes glacées</p>
+                <p>Nuvole bianche</p>
+            </section>
+
+            <section class="tranquil_songs" id="tranquil">
+                <p> I found peace</p>
+                <p> Dancing in the moonlight</p>
+                <p> JUL </p> 
+                <p> XEO </p>
+            </section>
+
+            <section class="gloomy_songs" id="gloomy">
+                <p>Tell me why I am waiting </p>
+                <p> I know you so well </p>
+                <p> The Reason Why </p> 
+                <p> Do I Wanna Know </p>
+            </section>
+        </section>
     </section>  
     
 
@@ -57,6 +76,28 @@
     </section>
 
 <script src="./app.js"></script>
+<!-- <script>
+    fetch('https://accounts.spotify.com/authorize', {  mode: 'cors' })
+
+    fetch('https://api.spotify.com/v1/playlists/6wObnEPQ63a4kei1sEcMdH/tracks',{  mode: 'cors' }).then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+        function appendData(data) {
+            var mainContainer = document.getElementById("myData");
+            for (var i = 0; i < data.length; i++) {
+                var div = document.createElement("div");
+                div.innerHTML = 'Name: ' + data[i].track;
+                mainContainer.appendChild(div);
+            }
+        }
+
+</script> -->
 </body>
 
 </html>

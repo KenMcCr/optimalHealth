@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "joi": "^17.3.0"
+    "joi": "^17.3.0",
+    "soundcloud": "^3.3.2",
+    "spotify-web-api-node": "^5.0.0"
   }
 }
