@@ -192,41 +192,11 @@ form input[type=text], input[type=tel]{
     justify-content: space-evenly;
 }
 
-.elated_songs {
-    font-size: 3em;
-    color: white;
-    text-align: center;
-    display: none;
-}
 
-.elated_songs_show{
-    font-size: 3em;
-    color: white;
-    text-align: center;
-}
 
-.tranquil_songs {
+.songs {
     font-size: 3em;
     color: white;
     text-align: center;
-    display: none;
-}
 
-.tranquil_songs_show{
-    font-size: 3em;
-    color: white;
-    text-align: center;
-}
-
-.gloomy_songs {
-    font-size: 3em;
-    color: white;
-    text-align: center;
-    display: none;
-}
-
-.gloomy_songs_show {
-    font-size: 3em;
-    color: white;
-    text-align: center;
 }
