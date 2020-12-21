@@ -5,8 +5,15 @@ const fs = require("fs");
 const SpotifyWebApi = require('spotify-web-api-node');
 const path = require('path')
 
-
 app.use(express.static(path.join(__dirname, 'client')));
+
+// Parse URL-encoded bodies (as sent by HTML forms)
+app.use(express.urlencoded());
+// Parse JSON bodies (as sent by API clients)
+app.use(express.json());
+
+
+
 
 var scopes = ['user-read-private', 'user-read-email'],
   redirectUri = 'http://localhost:3000',
@@ -55,6 +62,14 @@ spotifyApi.getPlaylist('6wObnEPQ63a4kei1sEcMdH')
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "./client/index.html"));
 });
+
+app.post('/', (req,res) => {
+    const fName = req.body.fName
+    const pNum = req.body.pNum
+    const recom = req.body.recom
+    console.log(fName, pNum, recom)
+    res.end()
+})
 
 const port = 3000;
 

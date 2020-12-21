@@ -184,6 +184,7 @@ form input[type=text], input[type=tel]{
     display: flex;
     height: 100%;
     align-items: center;
+    justify-content: center;
 }
 
 .songs_sec{

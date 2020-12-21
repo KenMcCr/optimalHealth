@@ -59,7 +59,7 @@
             <img src="Picture/Unknown.png" alt="x-button" class="x-button"/>
         </div>
         <div class="div_form">
-            <form action="#" method="POST">
+            <form action="/" method="POST" id="recommend">
 
                 <label for="fullName">Full Name:</label>
                 <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
@@ -76,6 +76,32 @@
     </section>
 
 <script src="./app.js"></script>
+<script>
+    const myForm = document.getElementById('recommend');
+    const fName = document.getElementById('fullName');
+    const pNum = document.getElementById('phone');
+    const recom = document.getElementById('recommendation');
+
+    myForm.addEventListener('submit', (event) =>{
+        event.preventDefault();
+        
+        fetch('/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json', 
+            'Access-Control-Allow-Origin': '*'
+        },
+        body: JSON.stringify({
+            user: {
+                name: fName,
+                phone: pNum,
+                recommend: recom
+            }
+        })
+    })
+
+    });
+</script>
 <!-- <script>
     fetch('https://accounts.spotify.com/authorize', {  mode: 'cors' })
 
